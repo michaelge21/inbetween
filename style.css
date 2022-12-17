@@ -1,7 +1,7 @@
 :root {
-    --inbetween-yellow: rgb(255, 247, 0);
+    --inbetween-yellow: #fff700;
     --inbetween-blue:#3c7ece;
-    --inbetween-darkBlue: #122F54;
+    --inbetween-darkBlue: #1E3E67;
 }
 
 @font-face {
@@ -55,6 +55,10 @@ body {
   header a:link,
   header a:visited {
     color: #17304F;
+  }
+
+  header .home  {
+    text-decoration: none;
   }
 
   header a:hover {
@@ -245,21 +249,73 @@ align-self: flex-end;
 /* || the mission */
 
 .mission {
-    height: 50vw;
-    background-color: #541A40;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, .8);
+    color: #252F42;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-areas:
+    ". h h h h h h h h h h . . . . ."
+    ". h h h h h h h h h h . . . . ."
+    ". p p p p p p p p p p . . . . ."
+    ". s s s s s s s s s s . . . . ."
+
+
+
+    ;
+    position: relative;
+    text-align: center;
 }
 
 .mission h2 {
-    color: white;
-    font-size: calc(.8rem + 3vw);
-    margin-top: 0;
+    font-size: calc(2rem + 2vw);
+    margin: 0;
+    grid-area: h;
+    font-family: "Brandon", sans-serif;
+    align-self: center;
+    justify-self: flex-start;
 }
 
 .mission p {
-    color: white;
     margin: 0;
-    font-size: calc(1.5rem + 1.5vw);
+    font-size: calc(.8rem + 1vw);
+    grid-area: p;
+    align-self: center;
+    justify-self: flex-start;
+    line-height: calc(4vh + 1rem);
 }
+
+.mission span {
+  grid-area: s;
+  align-self: center;
+  justify-self: flex-start;
+}
+
+.mission button{
+  font-size: calc(1.8rem + 1.8vw);
+  grid-area: a;
+  background-color: #4A9BFF;
+}
+
+.mission a{
+  display: block;
+}
+
+.mission a:link,
+.mission a:visited {
+  color: white;
+}
+
+
+
+
+.filler {
+  height: 50vh;
+  background-color: grey;
+}
+
+
+
 
   /* || aside */
 
