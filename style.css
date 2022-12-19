@@ -192,10 +192,8 @@ align-self: flex-end;
     transition: 0.5s;
   }
   .landing button:hover {
-    background-color: #5146CF;
-    transform: translateY(-4px);
-    box-shadow: 0px 15px 20px rgba(207, 92, 81, .5);
-
+    transform: translateY(-2px);
+    box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.5);
   }
   .landing button:hover span {
     padding-right: 40px;
@@ -250,8 +248,8 @@ align-self: flex-end;
 
 .mission {
     height: 60vh;
-    background-color: rgba(255, 255, 255, .8);
-    color: #252F42;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.7385154745491946) 0%, rgba(255,255,255,0.9850140739889706) 2%, rgba(255,255,255,1) 100%);     color: #252F42;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-areas:
@@ -303,27 +301,24 @@ align-self: flex-end;
   font-size: calc(.7rem + 1.8vw);
   grid-area: a;
   background-color: #4a9bffce;
-
   color: white;
   border: none;
   border-radius: 15px;
   text-align: center;
   cursor: pointer;
-
-
 }
 
 .mission button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .mission button span:after {
   content: '💛';
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.2s;
   width: 50px;
   height: 50px;
 }
@@ -339,13 +334,55 @@ align-self: flex-end;
 
 
 
-
-.filler {
+/* || theWhy */
+.theWhy {
   height: 50vh;
-  background-color: grey;
+  background-color: #EFEAF3;
+  color: #0F1E33;
+}
+
+.theWhy h2 {
+  font-size: calc(1.5rem + 2vw);
+  text-align: center;
 }
 
 
+.flex {
+  display: flex;
+}
+
+.foodWrapper {
+  flex-flow: row wrap;
+  list-style: none;
+  justify-content:center;
+  align-items: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.foodWrapper > li {
+  font-size: calc(.8rem + 1vw);
+  width: 30vw;
+  text-align: center;
+  flex: 1;
+}
+
+
+
+.foodWrapper img {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+
+.foodWrapper li:first-child {
+  flex: 3;
+}
+
+.foodWrapper li:nth-child(3) {
+  flex: 2;
+}
 
 
   /* || aside */
@@ -368,7 +405,7 @@ align-self: flex-end;
     margin-right: 0;
     width: 225px;
     text-align: center;
-    background-color: var(--inbetween-darkBlue);
+    background-color: #1e3e6780;
     color: var(--inbetween-yellow);
     font-size: calc(.5rem + 1vw);
     letter-spacing: 2px;
