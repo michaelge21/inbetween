@@ -249,16 +249,19 @@ align-self: flex-end;
 /* || the mission */
 
 .mission {
-    height: 50vh;
+    height: 60vh;
     background-color: rgba(255, 255, 255, .8);
     color: #252F42;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-areas:
-    ". h h h h h h h h h h . . . . ."
-    ". h h h h h h h h h h . . . . ."
-    ". p p p p p p p p p p . . . . ."
-    ". s s s s s s s s s s . . . . ."
+    ". h h h h h h h h h h h h h h ."
+    ". h h h h h h h h h h h h h h ."
+    ". p p p p p p p p p p . a a a ."
+    ". p p p p p p p p p p . a a a ."
+    ". s s s s s s s s s s s s s . ."
+    ". s s s s s s s s s s s s s . ."
+
 
 
 
@@ -283,6 +286,11 @@ align-self: flex-end;
     align-self: center;
     justify-self: flex-start;
     line-height: calc(4vh + 1rem);
+    text-align: left;
+}
+
+.introMissionPara {
+  text-indent: 2vw;
 }
 
 .mission span {
@@ -292,19 +300,42 @@ align-self: flex-end;
 }
 
 .mission button{
-  font-size: calc(1.8rem + 1.8vw);
+  font-size: calc(.7rem + 1.8vw);
   grid-area: a;
+  background-color: #4a9bffce;
+
+  color: white;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+
+
+}
+
+.mission button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.mission button span:after {
+  content: '💛';
+  opacity: 0;
+  transition: 0.5s;
+  width: 50px;
+  height: 50px;
+}
+
+.mission button:hover {
   background-color: #4A9BFF;
 }
 
-.mission a{
-  display: block;
+.mission button:hover span:after {
+  opacity: 1;
 }
 
-.mission a:link,
-.mission a:visited {
-  color: white;
-}
 
 
 
