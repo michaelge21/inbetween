@@ -9,6 +9,13 @@
     display: flex;
 }
 
+.whyRow1Img,
+.whyRow2Img,
+.whyRow3Img {
+    background-color: white;
+}
+
+
 .whyRow1Text {
     flex-flow: column wrap;
     flex: 1;
@@ -37,13 +44,14 @@
     border-radius: 5px;
     margin: 0;
     align-items: center;
+    /* justify-content: start; */
 }
 
 .whyRow1Img > li {
     height: calc(10vw + 10vh); 
     
     position: relative;
-    flex: 1 1 auto;
+    flex: .2 1 auto;
 }
 
 
@@ -57,9 +65,9 @@
     bottom: 0;
     font-size: calc(.1rem + .8vw + .5vh);
     text-align: center;
-
-    padding: 5px;
+    width: 90%;
     
+    padding: 5px 2px 5px 2px;
     transform: scale(0);
     transition: all .25s;
 }
@@ -110,13 +118,26 @@
     border-radius: 5px;
     margin: 0;
     align-items: center;
+
 }
+
+
+/* 
+IF YOU WANT SPACING, flex: 1 1 auto
+
+note that if you do this, "justify-content" will be ineffective.
+
+so, your main choices are as such rn--
+- use flex and get spacing, using up all space but leaving gaps btwn img
+- use justify content and get no spacing, no gaps between img
+
+*/
 
 .whyRow2Img > li {
 height: calc(9vw + 9vh); 
 
 position: relative;
-flex: 1 1 auto;
+flex: .3 1 auto;
 }
 
 .whyRow2Img img {
