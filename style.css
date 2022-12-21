@@ -107,7 +107,7 @@ body {
     ". j j j j j j j j j j j j . . ."
     ". p p p p p p p p p p . . . . ."
     ". . . . . . . . . . . . . . . ."
-    ". . . s s s s s s s s s s . . ."
+    ". . s s s s s s s s s s s s . ."
     ". . . . b b b b b b b b . . . ."
     ". . . . b b b b b b b b . . . .";
     height: 50vw;
@@ -157,7 +157,7 @@ align-self: flex-end;
   }
 
   .directed p {
-    font-size: calc(1.5rem + 1.5vw);
+    font-size: calc(1.5rem + 1vw);
   }
 
 
@@ -247,7 +247,6 @@ align-self: flex-end;
 /* || the mission */
 
 .mission {
-    height: 60vh;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,0.7385154745491946) 0%, rgba(255,255,255,0.9850140739889706) 2%, rgba(255,255,255,1) 100%);     color: #252F42;
     display: grid;
@@ -255,10 +254,11 @@ align-self: flex-end;
     grid-template-areas:
     ". h h h h h h h h h h h h h h ."
     ". h h h h h h h h h h h h h h ."
+    ". p p p p p p p p p p . . . . ."
     ". p p p p p p p p p p . a a a ."
-    ". p p p p p p p p p p . a a a ."
-    ". s s s s s s s s s s s s s . ."
-    ". s s s s s s s s s s s s s . ."
+    ". s s s s s s s s s s . a a a ."
+    ". s s s s s s s s s s . . . . ."
+    ". . c c c c c c c c c c c c . ."
 
 
 
@@ -285,17 +285,28 @@ align-self: flex-end;
     justify-self: flex-start;
     line-height: calc(4vh + 1rem);
     text-align: left;
+    padding-bottom: 20px;
 }
 
-.introMissionPara {
+/* .introMissionPara {
   text-indent: 2vw;
-}
+} */
 
 .mission span {
   grid-area: s;
   align-self: center;
   justify-self: flex-start;
 }
+
+.mission h3 {
+  margin: 0;
+  grid-area: c;
+  font-size: calc(.1rem + 2vw + 2vh);
+  color: var(--inbetween-blue);
+  font-family: "Brandon", sans-serif;
+}
+
+
 
 .mission button{
   font-size: calc(.7rem + 1.8vw);
