@@ -44,14 +44,14 @@
     border-radius: 5px;
     margin: 0;
     align-items: center;
-    /* justify-content: start; */
+    justify-content: start;
 }
 
 .whyRow1Img > li {
     height: calc(10vw + 10vh); 
     
     position: relative;
-    flex: .2 1 auto;
+    flex: 0 1 auto;
 }
 
 
@@ -65,7 +65,7 @@
     bottom: 0;
     font-size: calc(.1rem + .8vw + .5vh);
     text-align: center;
-    width: 90%;
+    width: 100%;
     
     padding: 5px 2px 5px 2px;
     transform: scale(0);
@@ -118,7 +118,8 @@
     border-radius: 5px;
     margin: 0;
     align-items: center;
-
+    justify-content: right;
+    gap: 5px;
 }
 
 
@@ -137,7 +138,7 @@ so, your main choices are as such rn--
 height: calc(9vw + 9vh); 
 
 position: relative;
-flex: .3 1 auto;
+flex: 0 1 auto;
 }
 
 .whyRow2Img img {
@@ -178,12 +179,11 @@ flex: .3 1 auto;
 }
 
 
-
 .whyRow3Img {
     list-style: none;
     flex-wrap: wrap;
     padding-left: 0;
-    background-color: rgba(153, 36, 36, 0.777);
+    background-color: #1E3E67;
     border-radius: 20px;
     margin: 0;
     align-items: center;
