@@ -17,9 +17,9 @@
 }
 
 body {
-
     margin: 0 1.8vw 0 1.8vw;
     overflow-x: hidden;
+    color: #333333;
 }
 
 
@@ -145,7 +145,7 @@ body {
 
   .landing p {
     grid-area: p;
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1.5vw + 1vh);
   }
 
   .landing .directed {
@@ -157,7 +157,7 @@ align-self: flex-end;
   }
 
   .directed p {
-    font-size: calc(1.5rem + 1vw);
+    font-size: calc(2vw + 1vh);
   }
 
 
@@ -217,6 +217,7 @@ align-self: flex-end;
     overflow: hidden;
     display: inline-block;
     animation: marquee 220s linear infinite;
+    animation-delay: 10s;
 }
 
 .marquee1 p {
