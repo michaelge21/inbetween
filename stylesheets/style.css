@@ -77,6 +77,7 @@ body {
 
 
   .splashCover {
+
     display: grid;
     position: absolute;
     top: 3%;
@@ -504,9 +505,23 @@ footer h3 {
     ". j j j j j j ."
     ". p p p p p . ."
     ". s s s s s s ."
-    ". . b b b b . ."
-    ". . b b b b . .";
+    ". b b b b . . ."
+    ". b b b b . . .";
   }
+
+  .landing p {
+    grid-area: p;
+    font-size: calc(1.5vw + 1vh + .1rem);
+  }
+
+  .marquee1 p:nth-child(odd) {
+    color: var(--inbetween-darkBlue);
+    /* make color in-between yellow? looked a bit jarring though... */
+}
+
+.marquee1 {
+  animation-delay: 0s;
+}
 
   .mission {
     display: none;
@@ -518,5 +533,10 @@ footer h3 {
 
   footer {
     height: 50vh;
+  }
+
+  .splashCover {
+    top: 38%;
+    right: 0;
   }
 }
