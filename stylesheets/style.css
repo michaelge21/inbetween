@@ -390,7 +390,7 @@ align-self: flex-end;
   
 
   footer {
-    margin: 0 -1.8vw;
+    margin: 2vw -1.8vw 0 -1.8vw;
     background-color: var(--inbetween-blue);
     display: flex;
     flex-flow: column wrap;
@@ -403,6 +403,31 @@ align-self: flex-end;
     list-style: none;
     display: flex;
     padding-left: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  .footerBar ul > li {
+    width: 80px;
+    height: 68px;
+    margin: 20px;
+  }
+
+  .footerBar ul li:last-child {
+    width: 68px;
+  }
+
+
+  .footerBar ul img {
+    max-width: 100%;
+    filter: grayscale(1);
+    transition: all .2s;
+  }
+
+  .footerBar li:hover img {
+    filter: grayscale(0);
   }
 
   footer .credits {
@@ -411,10 +436,17 @@ align-self: flex-end;
     color: #97BF7A ;   
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: #202020;
     margin: 0;
-    padding: 30px;
+    padding: 15px;
     text-align: center;
+
+    transition: all .2s;
+  }
+
+  footer .credits:hover {
+    padding: 30px;
+    border-radius: 0 30px 0 0;
   }
 
   footer > p:last-child {
@@ -425,7 +457,14 @@ align-self: flex-end;
     right: 0;
     background-color: black;
     margin: 0;
-    padding: 30px;
+    padding: 20px;
+
+    transition: all .2s;
+}
+
+footer > p:last-child:hover {
+  padding: 30px;
+  border-radius: 30px 0 0 0;
 }
 
 footer h2,
@@ -444,4 +483,6 @@ footer h2 span {
 
 footer h3 {
   font-size: calc(1.5vw + 1.5vh);
+  color: var(--inbetween-yellow);
+
 }
