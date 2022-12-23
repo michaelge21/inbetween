@@ -16,9 +16,13 @@
   font-family: "Barlow", sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
     margin: 0 1.8vw 0 1.8vw;
-    overflow-x: hidden;
+    
     color: #333333;
 }
 
@@ -510,6 +514,9 @@ footer h3 {
 
   .mission h2 {
     font-size: calc(1rem + 1vw);
+  }
 
+  footer {
+    height: 50vh;
   }
 }
