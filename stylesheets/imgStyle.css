@@ -56,9 +56,9 @@
     margin-top: 0;
 }
 
-.whyRow1Text p:nth-child(3) {
+/* .whyRow1Text p:nth-child(3) {
     font-size: calc(1vh + .5vw);
-}
+} */
 
 .whyRow1Img {
     list-style: none;
