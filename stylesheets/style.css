@@ -26,6 +26,12 @@ body {
     color: #333333;
 }
 
+p,
+h1,
+h2,
+h3 {
+  transition: .25s all;
+}
 
 /* || nav */
 
