@@ -228,7 +228,11 @@ align-self: flex-end;
     overflow: hidden;
     display: inline-block;
     animation: marquee 220s linear infinite;
-    animation-delay: 10s;
+    animation-delay: 5s;
+}
+
+.marquee1:hover {
+  animation-play-state: paused;
 }
 
 .marquee1 p {
@@ -264,13 +268,21 @@ align-self: flex-end;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-areas:
-    ". h h h h h h h h h h h h h h ."
+    /* ". h h h h h h h h h h h h h h ."
     ". h h h h h h h h h h h h h h ."
     ". p p p p p p p p p p . . . . ."
     ". p p p p p p p p p p . a a a ."
     ". s s s s s s s s s s . a a a ."
     ". s s s s s s s s s s . . . . ."
-    ". . c c c c c c c c c c c c . .";
+    ". . c c c c c c c c c c c c . ." */
+    
+    ". h h h h h h h h h h h h h h ."
+    ". h h h h h h h h h h h h h h ."
+    ". . p p p p p p p p p p p p . ."
+    ". . p p p p p p p p p p p p . ."
+    ". . s s s s s s s s s s s s . ."
+    ". . s s s s s s s s s s s s . ."
+    ". . c c c c c c c c c c c c . .";;
     position: relative;
     text-align: center;
 }
@@ -314,7 +326,7 @@ align-self: flex-end;
 }
 
 
-
+/* 
 .mission button{
   font-size: calc(.7rem + 1.8vw);
   grid-area: a;
@@ -347,7 +359,7 @@ align-self: flex-end;
 
 .mission button:hover span:after {
   opacity: 1;
-}
+} */
 
   /* || aside */
 
@@ -528,6 +540,8 @@ footer h3 {
 .marquee1 {
   animation-delay: 0s;
 }
+
+
 
   .mission {
     display: none;
