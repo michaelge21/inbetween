@@ -4,24 +4,34 @@
     box-sizing: border-box;
 }
 
+p {
+    margin-top: 0;
+}
+
 .flex {
     display: flex;
 }
 
+/* || ROW1 */
+
 .whyRow1 {
     flex-wrap: wrap;
-    outline: 3px green solid;
+    outline: 3px rgb(0, 128, 0) solid;
+    height: 60vh;
+
 }
 
 .whyRow1Text {
-    width: 20%;
+    width: calc((1/3)*100%);
     flex-direction: column;
+    font-size: calc(1rem + .5vw + .5vh);
+    padding: 0 20px;
 }
 
 
-.whyRow1Img {
-    min-width: 700px;
-    width: 80%;
+.whyRow1Imgs {
+    min-width: 650px;
+    width: calc((2/3)*100%);
 
     list-style: none;
     flex-wrap: wrap;
@@ -29,105 +39,169 @@
     margin: 0;
 }
 
-.whyRow1Img li {
-    height: 30vh;
+.whyRow1Imgs li {
+    height: 50%;
     position: relative;
 }
 
-.whyRow1Img li:first-child {
+.whyRow1Imgs li:first-child {
     background-image: url("../media/speakers/jasonPressKit.jpg");
     background-size: cover;
     width: 40%;
 }
 
-.whyRow1Img li:nth-child(2) {
+.whyRow1Imgs li:nth-child(2) {
     background-image: url("../media/speakers/VaniaManipod.jpeg");
     background-size: cover;
     width: 40%;
 }
 
-.whyRow1Img li:nth-child(3) {
+.whyRow1Imgs li:nth-child(3) {
     background-image: url("../media/speakers/mimi_headshot 2_2021.jpg");
     background-size: cover;
     width: 20%;
 }
 
-.whyRow1Img li:nth-child(4) {
-    background-image: url("../media/speakers/charlesYuPressKit.png");
+.whyRow1Imgs li:nth-child(4) {
+    background-image: url("../media/speakers/matthewDiep.1.jpg");
+
     background-size: cover;
-    width: 20%;
+    width: 25%;
 }
 
-.whyRow1Img li:nth-child(5) {
-    background-image: url("../media/speakers/Dr. Han Ren.jpeg");
+.whyRow1Imgs li:nth-child(5) {
+    background-image: url("../media/speakers/Dr. Han Ren.1.jpeg");
+    background-size: cover;
+    width: 35%;
+}
+
+.whyRow1Imgs li:nth-child(6) {
+    background-image: url("../media/speakers/charlesYuPressKit.1.png");
+
     background-size: cover;
     width: 40%;
 }
 
-.whyRow1Img li:nth-child(6) {
-    background-image: url("../media/speakers/matthewDiep.jpg");
-    background-size: cover;
-    width: 40%;
-}
-
-.whyRow1Img p {
+.whyRow1Imgs p {
     position: absolute;
     width: 100%;
     bottom: 0;
+    padding: 0;
     margin: 0;
 
     transform: scale(0);
     transition: all .25s;
 
-    background-color: rgba(0, 0, 0, 0.416);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     text-align: center;
-    font-size: 1vw + 1rem;
+    font-size: calc(.5vw + 1rem);
 }
 
-.whyRow1Img li:hover p {
+.whyRow1Imgs li:hover p {
     transform: scale(1);
 }
 
+/* || ROW2 */
 
-@media screen and (max-width: 890px) {
+
+.whyRow2 {
+    flex-wrap: wrap;
+}
+
+.whyRow2Text {
+    width: 29%;
+    order: 1;
+    flex-direction: column;
+}
+
+.whyRow2Imgs {
+    list-style: none;
+    flex-wrap: wrap;
+
+    min-width: 700px;
+    width: 71%;
+
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 990px) {
     .whyRow1 {
         align-items: center;
         justify-content: center;
+        height:unset;
+        /* unset synon with auto here. needed to ensure that the
+        height of this was reset so that the second row wouldn't collapse
+        into row1. */
     }
-    .whyRow1Text {
-        width: 90%;
-    }
-
-    .whyRow1Img {
+    
+    .whyRow1Text, .whyRow1Imgs {
         width: 100%;
     }
-    .whyRow1Img > li:nth-child(n) {
-        min-width: 50px;
-        width: 50%;
-        height: 15vh;
+
+    .whyRow1Imgs > li:nth-child(n) {
+        width: calc((1/3)*100%);
+        height: 35vh;
+    }
+
+    .whyRow1Imgs p {
+        transform: scale(1);
+        font-size: calc(1rem + .2vw);
+    }
+
+
+    .whyRow2 {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .whyRow2Text, .whyRow2Imgs {
+        width: 100%;
+
+    }
+
+    .whyRow2Text {
+        order: 0;
+        text-align: center;
+    }
+
+    .whyRow2Imgs > li:nth-child(n) {
+        /* styling these Row2 elements' pre-existing properties will not work.
+        hypothesis: bc all styling was made in JS first(?) unsure. */
     }
 
 }
 
 @media screen and (max-width: 450px) {
-    .whyRow1 {
-        align-items: center;
-        justify-content: center;
-    }
+
 
     .whyRow1Text {
+        width: 100%;
+    }
+
+    .whyRow1Imgs {
+        min-width: 300px;
+    }
+
+    .whyRow1Imgs > li:nth-child(n) {
+        width: 100%;
+        height: 25vh;
+        border-radius: 5px;
+    }
+
+
+    .whyRow2Text {
         width: 90%;
     }
 
-    .whyRow1Img {
+    .whyRow2Imgs {
         min-width: 300px;
-
-        }
-
-    .whyRow1Img > li:nth-child(n) {
-        width: 100%;
-        height: 15vh;
     }
+
+    .whyRow2Imgs > li:nth-child(n) {
+        border-radius: 5px;
+    }
+
 }
 
