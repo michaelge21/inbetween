@@ -307,9 +307,7 @@ align-self: flex-end;
     padding-bottom: 20px;
 }
 
-/* .introMissionPara {
-  text-indent: 2vw;
-} */
+
 
 .mission span {
   grid-area: s;
@@ -325,41 +323,6 @@ align-self: flex-end;
   font-family: "Brandon", sans-serif;
 }
 
-
-/* 
-.mission button{
-  font-size: calc(.7rem + 1.8vw);
-  grid-area: a;
-  background-color: #4a9bffce;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.mission button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.2s;
-}
-
-.mission button span:after {
-  content: '💛';
-  opacity: 0;
-  transition: 0.2s;
-  width: 50px;
-  height: 50px;
-}
-
-.mission button:hover {
-  background-color: #4A9BFF;
-}
-
-.mission button:hover span:after {
-  opacity: 1;
-} */
 
   /* || aside */
 
