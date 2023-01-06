@@ -1,6 +1,21 @@
-@font-face {
-    font-family: Brandon;
-    src: url("../media/Brandon_bld_it.otf") format("opentype");
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+:root {
+    --inbetween-yellow: #fff700;
+    --inbetween-blue:#3c7ece;
+    --inbetween-darkBlue: #1E3E67;
+}
+
+body {
+    font-family: "Barlow", serif;
+
+}
+
+p {
+    margin-top: 0;
 }
 
 .flex {
@@ -8,213 +23,311 @@
 }
 
 .why {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     color: #333333;
 }
 
-.why h2 {
-    margin: 0;
-    padding: 0;
-    font-size: calc(2rem + 2vw);
+.why > h2:first-child {
+    text-align: center;
+    font-size: calc(1rem + 1vw + 1vh);
+}
+
+.brandonFont {
     font-family: Brandon, sans-serif;
-
+    font-size: calc(1rem + .6vw + .6vh);
 }
 
-.why > span {
-    font-size: calc(2vw + 2vh);
+@font-face {
+    font-family: Brandon;
+    src: url("../media/Brandon_bld_it.otf") format("opentype");
 }
 
-.whyRow1Text,
-.whyRow2Text,
-.whyRow3Text {
-    border-radius: 30px;
+/* both rows */
+
+.whyRow1, .whyRow2 {
+    flex-wrap: wrap;
 }
 
-.whyRow1Img,
-.whyRow2Img,
-.whyRow3Img {
-    background-color: white;
+.whyRow1Text, .whyRow2Text {
+    width: calc((1/4)*100%);
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: space-evenly;
+
+    padding: 0 20px;
+
+    background-color: pink;
+    
+    line-height: calc(2.5rem + .1vw + .1vh);
+
+    border-radius: 20px;
 }
 
-
-.whyRow1Text {
-    flex-flow: column wrap;
-    flex: 1;
-    background-color: #ffc0cb;
-    padding: 20px;
+.whyRow1Text p, .whyRow2Text p {
+    font-size: calc(1rem + .5vw + .5vh);
 }
 
-.whyRow1Text h2 {
-    font-size: calc(3vw + 3vh);
-    margin-bottom: 0;
+.whyRow1Text h2, .whyRow2Text h2 {
+    font-size: calc(2rem + 1vw + 1vh);
 }
 
-.whyRow1Text p {
-    font-size: calc(.5rem + 1vh + .5vw);
-    margin-top: 0;
-}
+.whyRow1Imgs, .whyRow2Imgs {
+    width: calc((3/4)*100%);
 
-.whyRow1Img {
     list-style: none;
     flex-wrap: wrap;
-    flex: 2;
-    padding-left: 10px;
-    border-radius: 5px;
+    padding: 0;
     margin: 0;
-    align-items: center;
-    gap: 8px;
 }
 
-.whyRow1Img > li {
-    height: calc(9vw + 10vh); 
+.whyRow1Imgs li:first-child,
+.whyRow2Imgs li:first-child,
+.whyRow3Imgs li:first-child {
+    border-radius: 20px 0 0 0;
+}
+
+.whyRow1Imgs li:nth-child(3),
+.whyRow2Imgs li:nth-child(3),
+.whyRow3Imgs li:nth-child(3) {
+    border-radius: 0 20px 0 0;
+}
+
+.whyRow1Imgs li:nth-child(4),
+.whyRow2Imgs li:nth-child(4),
+.whyRow3Imgs li:nth-child(4) {
+    border-radius: 0 0 0 20px;
+}
+
+
+
+.whyRow1Imgs li:nth-child(6),
+.whyRow2Imgs li:nth-child(5),
+.whyRow3Imgs li:nth-child(6) {
+    border-radius: 0 0 20px 0;
+}
+/* || ROW1 */
+
+.whyRow1 {
+    height: 60vh;
+}
+
+.whyRow1Text h2 + p span {
+    font-size: calc(.5rem + .5vw + .5vh);
+}
+
+.whyRow2Text h2 + p span {
+    font-size: calc(.5rem + .5vw + .5vh);
+}
+
+
+.whyRow1Imgs {
+    min-width: 650px;
+}
+
+.whyRow1Imgs li {
+    height: 50%;
     position: relative;
-    flex: 0 1 auto;
 }
 
-.whyRow1Img > li > p {
+.whyRow1Imgs li:first-child {
+    background-image: url("../media/speakers/jasonPressKit.jpg");
+    background-size: cover;
+    width: 40%;
+}
+
+.whyRow1Imgs li:nth-child(2) {
+    background-image: url("../media/speakers/VaniaManipod.jpeg");
+    background-size: cover;
+    width: 40%;
+}
+
+.whyRow1Imgs li:nth-child(3) {
+    background-image: url("../media/speakers/mimi_headshot 2_2021.jpg");
+    background-size: cover;
+    width: 20%;
+
+    border-radius: 0 20px 0 0;
+}
+
+.whyRow1Imgs li:nth-child(4) {
+    background-image: url("../media/speakers/matthewDiep.1.jpg");
+
+    background-size: cover;
+    width: 25%;
+    border-radius: 0 0 0 20px;
+}
+
+.whyRow1Imgs li:nth-child(5) {
+    background-image: url("../media/speakers/Dr. Han Ren.1.jpeg");
+    background-size: cover;
+    width: 35%;
+}
+
+.whyRow1Imgs li:nth-child(6) {
+    background-image: url("../media/speakers/charlesYuPressKit.1.png");
+
+    background-size: cover;
+    width: 40%;
+
+    border-radius: 0 0 20px 0;
+}
+
+.whyRow1Imgs p {
     position: absolute;
-    border-radius: 0 0 20px 20px;
-    background: rgb(2,0,36);
-    color: white;
-    margin: 0;
-    bottom: 0;
-    font-size: calc(.1rem + .7vw + .5vh);
-    text-align: center;
     width: 100%;
-    padding: 5px 0 5px 2px;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+
     transform: scale(0);
     transition: all .25s;
-}
-.whyRow1Img img {
-    border-radius: 20px;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    vertical-align: middle;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    font-size: calc(.5vw + 1rem);
 }
 
-.whyRow1Img li:hover p{
+.whyRow1Imgs li:hover p {
     transform: scale(1);
 }
 
-
-/* ROW 2 */
-
-.whyRow2 {
-    flex-direction: row;
-}
+/* || ROW2 */
 
 .whyRow2Text {
-    flex-flow: column wrap;
-    flex: 1;
     order: 1;
-    background-color: pink;
-    padding: 20px;
-    text-align: right;
-}
-
-.whyRow2Text h2 {
-    font-size: calc(3vw + 3vh);
-    margin-bottom: 0;
-}
-
-.whyRow2Text p {
-    font-size: calc(.5rem + 1vh + .5vw);
-    margin-top: 0;
+    align-items: flex-start;
     text-align: left;
+
 }
 
-.whyRow2Img {
-    list-style: none;
-    flex-wrap: wrap;
-    order: 0;
-    flex: 2;
-    padding-left: 0;
-    border-radius: 5px;
-    margin: 0;
-    align-items: center;
-    gap: 8px;
+.whyRow2Imgs {
+    min-width: 700px;
 }
 
-
-/* 
-IF YOU WANT SPACING, flex: 1 1 auto
-
-note that if you do this, "justify-content" will be ineffective.
-
-so, your main choices are as such rn--
-- use flex and get spacing, using up all space but leaving gaps btwn img
-- use justify content and get no spacing, no gaps between img
-
-*/
-
-.whyRow2Img > li {
-    height: calc(8vw + 9vh); 
-    position: relative;
-    flex: 1 1 auto;
-}
-
-.whyRow2Img img {
-    border-radius: 20px;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    vertical-align: middle;
-}
-
-
-/* row 3 */
+/* || ROW3 */
 
 .whyRow3 {
-    align-items: center;
-    justify-content: center;
     position: relative;
 }
 
 .whyRow3Text {
+    flex-flow: column;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.644);
     width: 100%;
     height: 100%;
+
+    border-radius: 20px;
+    font-size: calc(4rem + 2vw + 2vh);
 }
 
-.whyRow3Text h2 {
-    font-size: calc(5vw + 5vh);
+.whyRow3Text > h2 + p{
+    font-family: Brandon, sans-serif;
+    font-size: calc(3rem + 2vw + 2vh);
+
 }
 
+.whyRow3Text > h2 + p span:first-child {
+    color: var(--inbetween-yellow); 
+}
 
-.whyRow3Img {
+.whyRow3Text > h2 + p span:nth-child(2) {
+    color: var(--inbetween-blue); 
+}
+
+.whyRow3Imgs {
     list-style: none;
     flex-wrap: wrap;
-    padding-left: 0;
-    background-color: #1E3E67;
-    border-radius: 20px;
+    padding: 0;
     margin: 0;
-    align-items: center;
-    justify-content: center;
 }
 
-.whyRow3Img > li {
-    height: calc(10vw + 10vh); 
-    flex: 0 1 auto;
+@media screen and (max-width: 990px) {
+    .whyRow1 {
+        align-items: center;
+        justify-content: center;
+        height:unset;
+        /* unset synon with auto here. needed to ensure that the
+        height of this was reset so that the second row wouldn't collapse
+        into row1. */
+    }
+    
+    .whyRow1Text, .whyRow1Imgs {
+        width: 100%;
+    }
+
+    .whyRow1Imgs > li:nth-child(n) {
+        width: calc((1/3)*100%);
+        height: 35vh;
+    }
+
+    .whyRow1Imgs p {
+        transform: scale(1);
+        font-size: calc(1rem + .2vw);
+    }
+
+
+    .whyRow2 {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .whyRow2Text, .whyRow2Imgs {
+        width: 100%;
+
+    }
+
+    .whyRow2Text {
+        order: 0;
+    }
+
+    .whyRow2Imgs > li:nth-child(n) {
+        /* styling these Row2 elements' pre-existing properties will not work.
+        hypothesis: bc all styling was made in JS first(?) unsure. */
+    }
+
 }
 
-.whyRow3Img img {
-    border-radius: 10px;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    vertical-align: middle;
+@media screen and (max-width: 450px) {
+
+    .whyRow3Imgs li:nth-child(n) {
+        border-radius: 0;
+    }
+
+    .whyRow3Imgs li:first-child {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .whyRow3Imgs li:last-child {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .whyRow1Text, .whyRow2Text {
+        width: 100%;
+    }
+
+    .whyRow1Imgs, .whyRow2Imgs {
+        min-width: 300px;
+    }
+
+    .whyRow1Imgs > li:nth-child(n) {
+        width: 100%;
+        height: 25vh;
+        border-radius: 5px;
+    }
+
+    .whyRow2Imgs > li:nth-child(n) {
+        border-radius: 5px;
+        width: 100% !important;
+    }
+
+    .whyRow3Imgs > li:nth-child(n) {
+        width: 100% !important;
+    }
+
 }
 
-@media screen and (max-width: 430px) {
-    .why h2 {
-        font-size: calc(2.3vw + 2.2vh);
-      }
-}

@@ -13,7 +13,6 @@
 ::after,
 ::before {
   box-sizing: border-box;
-  font-family: "Barlow", sans-serif;
 }
 
 html {
@@ -22,7 +21,7 @@ html {
 
 body {
     margin: 0 1.8vw 0 1.8vw;
-    
+    font-family: "Barlow", sans-serif;
     color: #333333;
 }
 
@@ -370,6 +369,7 @@ align-self: flex-end;
   }
   
 
+  /* || Footer */
   footer {
     margin: 2vw -1.8vw 0 -1.8vw;
     background-color: var(--inbetween-blue);
@@ -473,8 +473,9 @@ footer h3 {
 
 
 @media screen and (max-width: 430px) {
-  #remove {
-    display: none; 
+
+  .asideNav {
+    display: none;
   }
 
   .landing {
