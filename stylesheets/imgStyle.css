@@ -68,7 +68,7 @@ p {
 }
 
 .whyRow1Text h2, .whyRow2Text h2 {
-    font-size: calc(2rem + 1vw + 1vh);
+    font-size: calc(3rem + 1vw + 1vh);
 }
 
 .whyRow1Imgs, .whyRow2Imgs {
@@ -292,7 +292,7 @@ p {
 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
 
     .whyRow3Imgs li:nth-child(n) {
         border-radius: 0;

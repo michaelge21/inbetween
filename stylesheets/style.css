@@ -472,7 +472,7 @@ footer h3 {
 
 
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 480px) {
 
   .asideNav {
     display: none;
@@ -496,6 +496,11 @@ footer h3 {
     font-size: calc(1.5vw + 1vh + .1rem);
   }
 
+  .splashCover {
+    top: 20%;
+    right: 0;
+  }
+
   .marquee1 p:nth-child(odd) {
     color: var(--inbetween-darkBlue);
     /* make color in-between yellow? looked a bit jarring though... */
@@ -504,8 +509,6 @@ footer h3 {
 .marquee1 {
   animation-delay: 0s;
 }
-
-
 
   .mission {
     display: none;
@@ -519,8 +522,5 @@ footer h3 {
     height: 50vh;
   }
 
-  .splashCover {
-    top: 38%;
-    right: 0;
-  }
+
 }
