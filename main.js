@@ -36,10 +36,10 @@ const thirdRowImgs = document.querySelector(".whyRow3Imgs");
 const arrayofFoodImgs = [
     {src: "2019Food1.jpg", alt:"handing out food to a long line of people"},
     {src:"2019Food2.jpeg", alt:"portait image of naan bread"},
-    {src:"eggTarts.jpg", alt:"portait image of egg tarts from WeiHong Bakery"},
-    {src:"platingFood.jpg", alt:"plating food in the DUC"},
-    {src:"porkBuns.jpg", alt:"pork buns from WeiHong Bakery"},
-    {src: "mangoNectar.jpg", alt:"lychee, aloe, mango, and milkis drinks"},
+    {src:"eggTarts.JPG", alt:"portait image of egg tarts from WeiHong Bakery"},
+    {src:"platingFood.JPG", alt:"plating food in the DUC"},
+    {src:"porkBuns.JPG", alt:"pork buns from WeiHong Bakery"},
+    {src: "mangoNectar.JPG", alt:"lychee, aloe, mango, and milkis drinks"},
 ]
 
 let incrementer = 0;
