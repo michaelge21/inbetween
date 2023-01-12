@@ -497,6 +497,13 @@ footer h3 {
 }
 
 
+@media screen and (max-width: 990px) {
+  .footerBar ul img {
+
+    filter: grayscale(0);
+
+  }
+}
 
 
 @media screen and (max-width: 480px) {
