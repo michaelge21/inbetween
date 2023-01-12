@@ -49,6 +49,11 @@ p {
 
 .whyRow1, .whyRow2 {
     flex-wrap: wrap;
+    gap: 1%;
+}
+
+.whyRow1, .whyRow2, .whyRow3 {
+    margin-top: 3%;
 }
 
 .whyRow1Text, .whyRow2Text {
@@ -76,7 +81,7 @@ p {
 }
 
 .whyRow1Imgs, .whyRow2Imgs {
-    width: calc((3/4)*100%);
+    width: 74%;
 
     list-style: none;
     flex-wrap: wrap;
@@ -112,7 +117,7 @@ p {
 /* || ROW1 */
 
 .whyRow1 {
-    height: 60vh;
+    height: 50vh;
 }
 
 .whyRow1Text h2 + p span {
