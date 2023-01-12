@@ -50,6 +50,7 @@ p {
 .whyRow1, .whyRow2 {
     flex-wrap: wrap;
     gap: 1%;
+    height: 70vh;
 }
 
 .whyRow1, .whyRow2, .whyRow3 {
@@ -116,9 +117,6 @@ p {
 }
 /* || ROW1 */
 
-.whyRow1 {
-    height: 50vh;
-}
 
 .whyRow1Text h2 + p span {
     font-size: calc(.5rem + .5vw + .5vh);

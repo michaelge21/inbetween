@@ -415,7 +415,7 @@ align-self: flex-end;
   footer .credits {
     border-radius: 0 50px 0 0;
     position: absolute;
-    color: #97BF7A ;   
+    color: #97BF7A;   
     bottom: 0;
     left: 0;
     background-color: #202020;
@@ -425,6 +425,33 @@ align-self: flex-end;
 
     transition: all .2s;
   }
+
+  .credits a {
+    font-size: 1rem;
+    transition: all .2s;
+  }
+
+
+  .credits a:link,
+  .credits a:visited {
+    color: #97BF7A;
+  }
+
+  .credits a:hover {
+    font-size: 1.2rem;
+  }
+
+  .credits a:hover::after {
+    content: "👋🏼😄"
+  }
+
+  .credits a:active {
+    color: white;
+  }
+
+
+
+
 
   footer .credits:hover {
     padding: 30px;
