@@ -1,19 +1,14 @@
-:root {
-    --inbetween-yellow: #fff700;
-    --inbetween-blue:#3c7ece;
-    --inbetween-darkBlue: #1E3E67;
-}
-
-@font-face {
-    font-family: Brandon;
-    src: url("media/Brandon_bld_it.otf") format("opentype");
-}
-
 *,
 ::after,
 ::before {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: Brandon;
+  src: url("media/Brandon_bld_it.otf") format("opentype");
+}
+
 
 html {
   overflow-x: hidden;
@@ -521,8 +516,8 @@ footer h3 {
     ". j j j j j j ."
     ". p p p p p . ."
     ". s s s s s s ."
-    ". b b b b . . ."
-    ". b b b b . . .";
+    ". b b b b b b ."
+    ". b b b b b b .";
   }
 
   .landing p {
