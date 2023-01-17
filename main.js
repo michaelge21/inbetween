@@ -1,5 +1,3 @@
-console.log('are you reading this')
-
 const secondRowImages = document.querySelector(".whyRow2Imgs");
 
 const arrayOfImgName = [

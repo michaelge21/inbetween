@@ -15,7 +15,6 @@
 
 body {
     font-family: "Barlow", serif;
-
 }
 
 p {
@@ -116,17 +115,12 @@ p {
 .whyRow3Imgs li:nth-child(6) {
     border-radius: var(--bottom-right-padding);
 }
-/* || ROW1 */
 
+/* || ROW1 */
 
 .whyRow1Text h2 + p span {
     font-size: calc(.5rem + .5vw + .5vh);
 }
-
-.whyRow2Text h2 + p span {
-    font-size: calc(.5rem + .5vw + .5vh);
-}
-
 
 .whyRow1Imgs {
     min-width: 650px;
@@ -207,6 +201,10 @@ p {
     align-items: flex-start;
     text-align: left;
 
+}
+
+.whyRow2Text h2 + p span {
+    font-size: calc(.5rem + .5vw + .5vh);
 }
 
 .whyRow2Imgs {
