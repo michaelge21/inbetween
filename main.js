@@ -22,8 +22,6 @@ while (i < arrayOfImgName.length) {
         ? newListItem.style.width = "30%" 
         : newListItem.style.width = "35%";
 
-
-
     secondRowImages.appendChild(newListItem);
 
     i++;
@@ -47,6 +45,7 @@ while (incrementer < arrayofFoodImgs.length) {
     newListItem.style.backgroundImage = 
     `url(media/food/${arrayofFoodImgs[incrementer].src})`;
     newListItem.style.backgroundSize = "cover";
+    newListItem.setAttribute('loading', 'lazy');
 
 
     (incrementer == 4)

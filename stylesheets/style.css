@@ -9,7 +9,6 @@
   src: url("media/Brandon_bld_it.otf") format("opentype");
 }
 
-
 html {
   overflow-x: hidden;
 }
@@ -18,13 +17,6 @@ body {
     margin: 0 1.8vw 0 1.8vw;
     font-family: "Barlow", sans-serif;
     color: #333333;
-}
-
-p,
-h1,
-h2,
-h3 {
-  transition: .25s all;
 }
 
 /* || nav */
@@ -113,6 +105,7 @@ h3 {
     ". p p p p p p p p p p . . . . ."
     ". . . . . . . . . . . . . . . ."
     ". . s s s s s s s s s s s s . ."
+    ". . . . b b b b b b b b . . . ."
     ". . . . b b b b b b b b . . . ."
     ". . . . b b b b b b b b . . . .";
     height: 50vw;

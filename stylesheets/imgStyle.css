@@ -253,11 +253,9 @@ p {
 }
 
 @media screen and (max-width: 990px) {
-
     .whyRow1Text, .whyRow2Text {
         height: 30vh;
     }
-
 
     .whyRow1 {
         align-items: center;
