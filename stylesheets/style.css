@@ -67,9 +67,7 @@ body {
 
   /* || main */
 
-
   .splashCover {
-
     display: grid;
     position: absolute;
     top: 3%;
@@ -84,7 +82,7 @@ body {
     ". . . i i i i i"
     ". . . . . . . .";
 
-    height: 50vw;
+    height: 50vh;
   }
 
   .splashCover img {
@@ -108,7 +106,7 @@ body {
     ". . . . b b b b b b b b . . . ."
     ". . . . b b b b b b b b . . . ."
     ". . . . b b b b b b b b . . . .";
-    height: 50vw;
+    height: 90vh;
     background-color: var(--inbetween-darkBlue);
     color: var(--inbetween-yellow);
 
@@ -496,6 +494,10 @@ footer h3 {
 
 @media screen and (max-width: 480px) {
 
+  .hide {
+    display: none;
+  }
+
   .asideNav {
     display: none;
   }
@@ -503,7 +505,7 @@ footer h3 {
   .landing {
     height: unset;
     grid-template-columns: repeat(8, 1fr);
-    grid-auto-rows: minmax(50px, 75px);
+    grid-auto-rows: minmax(50px, 1fr);
     grid-template-areas: 
     ". h h h h h h ."
     ". j j j j j j ."
@@ -511,11 +513,13 @@ footer h3 {
     ". s s s s s s ."
     ". b b b b b b ."
     ". b b b b b b .";
+    height: 80vh;
+
   }
 
   .landing p {
     grid-area: p;
-    font-size: calc(1.5vw + 1vh + .1rem);
+    font-size: calc(1.5vw + 1vh + .5rem);
   }
 
   .splashCover {
@@ -530,6 +534,7 @@ footer h3 {
 
 .marquee1 {
   animation-delay: 0s;
+  animation-duration: 280s;
 }
 
   .mission {
