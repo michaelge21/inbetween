@@ -2,6 +2,9 @@
     --inbetween-yellow: rgb(255, 247, 0);
     --inbetween-blue:#3c7ece;
     --inbetween-darkBlue: #1E3E67;
+    --ti-cursor-color: var(--inbetween-yellow);
+    --ti-cursor-font-weight: 100;
+    --ti-cursor-font-family: "Barlow";
 }
 
 @font-face {
@@ -81,6 +84,12 @@ body {
   section h1 {
     text-align: center;
     font-size: calc(3rem + 2vw + 2vh);
+  }
+
+  section h1 span {
+    color: var(--inbetween-yellow);
+    background-color: var(--inbetween-darkBlue);
+    font-family: "Brandon", serif;
   }
 
 

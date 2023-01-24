@@ -14,7 +14,7 @@
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
 
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", () => {
     new TypeIt("#typeIt", {
         lifeLike: true,
         startDelay: 1000,
@@ -26,7 +26,7 @@
     .pause(1000)
     .move(-9)
     .type("<i>naïve<i> ")
-    .pause(3000)
+    .pause(2000)
     .delete()
     .type("a conference for ")
     .pause(2000)
