@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: Brandon;
-    src: url("media/Brandon_bld_it.otf") format("opentype");
+    src: url("../media/Brandon_bld_it.otf") format("opentype");
 }
 
 *,
@@ -17,7 +17,6 @@
 }
 
 body {
-
     margin: 0 1.8vw 0 1.8vw;
     overflow-x: hidden;
 }
@@ -69,6 +68,21 @@ body {
     color: #CF5C51;
   }
 
+  /* || main */
+
+  section#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+  }
+
+  section h1 {
+    text-align: center;
+    font-size: calc(3rem + 2vw + 2vh);
+  }
+
 
 
   /* || aside */
@@ -116,3 +130,13 @@ body {
     background-color: var(--inbetween-yellow);
   }
   
+
+  @media screen and (max-width: 480px) {
+    .asideNav {
+      display: none;
+    }
+
+    section h1 {
+      font-size: calc(1rem + 1vw + 1vh);
+    }  
+  }
