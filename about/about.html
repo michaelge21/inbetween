@@ -19,6 +19,7 @@
         lifeLike: true,
         startDelay: 1000,
         loop: true,
+        cursorChar: " |"
     })
     .pause(4000)
     .delete()
@@ -77,11 +78,12 @@
     .delete()
     .type("another free food event.")
     .pause(2000)
-    .break()
-    .type("... but we do have lots of free food.")
+    .delete()
+    .type("<span class='tiny'>but, we do have free food.</span>")
     .pause(5000)
-    .type("<i> seriously. so much food. pls help.<i>")
-    .pause(3000)
+    .delete()
+    .type("<span class='tiny'>seriously. so much food. pls help.</span>")
+    .pause(1000)
     .delete()
     .go();
   });
@@ -99,7 +101,7 @@
                     <a href="#" class="about">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#">REGISTER</a>
+                    <a href="#">NEWSLETTER</a>
                 </li>
                 <li>
                     <a href="#" id="contact">GET IN TOUCH</a>
@@ -110,7 +112,7 @@
 
     <main>
         <section id="hero">
-            <h1>We're more than just <br>"<span id="typeIt">Asian mental health.</span>"</h1>
+            <h1>We're more than just <br><span id="typeIt">Asian mental health.</span></h1>
         </section>
     </main>
     <footer class="footerBar">

@@ -1,9 +1,10 @@
 :root {
     --inbetween-yellow: rgb(255, 247, 0);
+    --inbetween-yellow-transparent: rgba(255, 247, 0, .8);
     --inbetween-blue:#3c7ece;
     --inbetween-darkBlue: #1E3E67;
-    --ti-cursor-color: var(--inbetween-yellow);
-    --ti-cursor-font-weight: 100;
+    --ti-cursor-color: var(--inbetween-yellow-transparent);
+    --ti-cursor-font-weight: 0;
     --ti-cursor-font-family: "Barlow";
 }
 
@@ -90,6 +91,12 @@ body {
     color: var(--inbetween-yellow);
     background-color: var(--inbetween-darkBlue);
     font-family: "Brandon", serif;
+    margin-top: 3vh;
+  }
+
+  .tiny {
+    font-size: calc(.5rem + .5vw + .5vh);
+    line-height: 1rem;
   }
 
 
