@@ -5,4 +5,4 @@ This project is in-progress. The designer and developer (me) recognizes that lot
 Huge thanks to:
 - WashU's Student Union for funding this conference
 - [TypeIt](https://www.typeitjs.com/), a JS library used for the typewriter effect on this site. The documentation is clean and free usage is allowed for non-commercial purposes-- check them out!
-- The in-between team. Photos are taken either from press kits provided by speakers, public promotion materials, or were taken live at the event. Photography of students is allowed per the Service Provider Event Agreement, X: Intellectual Property, subcolumn d.
+- The in-between team. Photos are taken either from press kits provided by speakers, public promotion materials, or were taken live at the event by our hard-working PR teams. Photography of students is allowed per the Service Provider Event Agreement, X: Intellectual Property, subcolumn d.
