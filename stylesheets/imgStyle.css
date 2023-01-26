@@ -1,360 +1,362 @@
 :root {
-    --inbetween-yellow: #fff700;
-    --inbetween-blue:#3c7ece;
-    --inbetween-darkBlue: #1E3E67;
-    --top-left-padding: 20px 0 0 0;
-    --top-right-padding: 0 20px 0 0;
-    --bottom-left-padding: 0 0 0 20px;
-    --bottom-right-padding: 0 0 20px 0;
+  --inbetween-yellow: #fff700;
+  --inbetween-blue: #3c7ece;
+  --inbetween-darkBlue: #1e3e67;
+  --top-left-padding: 20px 0 0 0;
+  --top-right-padding: 0 20px 0 0;
+  --bottom-left-padding: 0 0 0 20px;
+  --bottom-right-padding: 0 0 20px 0;
 }
 
 body {
-    font-family: "Barlow", serif;
+  font-family: "Barlow", serif;
 }
 
 p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .why {
-    color: #333333;
+  color: #333333;
 }
 
 .why > h2:first-child {
-    text-align: center;
-    font-size: calc(1rem + 1vw + 1vh);
+  text-align: center;
+  font-size: calc(1rem + 1vw + 1vh);
 }
 
 .brandonFont {
-    font-family: Brandon, sans-serif;
-    font-size: calc(1rem + .6vw + .6vh);
+  font-family: Brandon, sans-serif;
+  font-size: calc(1rem + 0.6vw + 0.6vh);
 }
 
 @font-face {
-    font-family: Brandon;
-    src: url("../media/Brandon_bld_it.otf") format("opentype");
+  font-family: Brandon;
+  src: url("../media/Brandon_bld_it.otf") format("opentype");
 }
 
 /* both rows */
 
-.whyRow1, .whyRow2 {
-    flex-wrap: wrap;
-    gap: 1%;
-    height: 70vh;
+.whyRow1,
+.whyRow2 {
+  flex-wrap: wrap;
+  gap: 1%;
+  height: 70vh;
 }
 
-.whyRow1, .whyRow2, .whyRow3 {
-    margin-top: 3%;
+.whyRow1,
+.whyRow2,
+.whyRow3 {
+  margin-top: 3%;
 }
 
-.whyRow1Text, .whyRow2Text {
-    width: calc((1/4)*100%);
-    height: 60vh;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0 20px;
+.whyRow1Text,
+.whyRow2Text {
+  width: calc((1 / 4) * 100%);
+  height: 60vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 20px;
 
-    background-color: pink;
-    
-    line-height: calc(2.5rem + .1vw + .1vh);
+  background-color: pink;
 
-    border-radius: 20px;
+  line-height: calc(2.5rem + 0.1vw + 0.1vh);
+
+  border-radius: 20px;
 }
 
-.whyRow1Text p, .whyRow2Text p {
-    font-size: calc(1rem + .5vw + .5vh);
-    text-align: center;
+.whyRow1Text p,
+.whyRow2Text p {
+  font-size: calc(1rem + 0.5vw + 0.5vh);
+  text-align: center;
 }
 
-.whyRow1Text h2, .whyRow2Text h2 {
-    font-size: calc(3rem + 1vw + 1vh);
+.whyRow1Text h2,
+.whyRow2Text h2 {
+  font-size: calc(3rem + 1vw + 1vh);
 }
 
-.whyRow1Imgs, .whyRow2Imgs {
-    width: 74%;
+.whyRow1Imgs,
+.whyRow2Imgs {
+  width: 74%;
 
-    list-style: none;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 .whyRow1Imgs li:first-child,
 .whyRow2Imgs li:first-child,
 .whyRow3Imgs li:first-child {
-    border-radius: var(--top-left-padding);
+  border-radius: var(--top-left-padding);
 }
 
 .whyRow1Imgs li:nth-child(3),
 .whyRow2Imgs li:nth-child(3),
 .whyRow3Imgs li:nth-child(3) {
-    border-radius: var(--top-right-padding);
+  border-radius: var(--top-right-padding);
 }
 
 .whyRow1Imgs li:nth-child(4),
 .whyRow2Imgs li:nth-child(4),
 .whyRow3Imgs li:nth-child(4) {
-    border-radius: var(--bottom-left-padding);
+  border-radius: var(--bottom-left-padding);
 }
-
-
 
 .whyRow1Imgs li:nth-child(6),
 .whyRow2Imgs li:nth-child(5),
 .whyRow3Imgs li:nth-child(6) {
-    border-radius: var(--bottom-right-padding);
+  border-radius: var(--bottom-right-padding);
 }
 
 /* || ROW1 */
 
 .whyRow1Text h2 + p span {
-    font-size: calc(.5rem + .5vw + .5vh);
+  font-size: calc(0.5rem + 0.5vw + 0.5vh);
 }
 
 .whyRow1Imgs {
-    min-width: 650px;
+  min-width: 650px;
 }
 
 .whyRow1Imgs li {
-    height: 50%;
-    position: relative;
+  height: 50%;
+  position: relative;
 }
 
 .whyRow1Imgs li:first-child {
-    background-image: url("../media/speakers/jasonPressKit.jpg");
-    background-size: cover;
-    width: 40%;
+  background-image: url("../media/speakers/jasonPressKit.jpg");
+  background-size: cover;
+  width: 40%;
 }
 
 .whyRow1Imgs li:nth-child(2) {
-    background-image: url("../media/speakers/VaniaManipod.jpeg");
-    background-size: cover;
-    width: 40%;
+  background-image: url("../media/speakers/VaniaManipod.jpeg");
+  background-size: cover;
+  width: 40%;
 }
 
 .whyRow1Imgs li:nth-child(3) {
-    background-image: url("../media/speakers/mimi_headshot 2_2021.jpg");
-    background-size: cover;
-    width: 20%;
+  background-image: url("../media/speakers/mimi_headshot 2_2021.jpg");
+  background-size: cover;
+  width: 20%;
 
-    border-radius: 0 20px 0 0;
+  border-radius: 0 20px 0 0;
 }
 
 .whyRow1Imgs li:nth-child(4) {
-    background-image: url("../media/speakers/Dr\ Sukanya\ Ray.jpeg");
+  background-image: url("../media/speakers/Dr\ Sukanya\ Ray.jpeg");
 
-    background-size: cover;
-    width: 25%;
-    border-radius: 0 0 0 20px;
+  background-size: cover;
+  width: 25%;
+  border-radius: 0 0 0 20px;
 }
 
 .whyRow1Imgs li:nth-child(5) {
-    background-image: url("../media/speakers/Dr. Han Ren.1.jpeg");
-    background-size: cover;
-    width: 35%;
+  background-image: url("../media/speakers/Dr. Han Ren.1.jpeg");
+  background-size: cover;
+  width: 35%;
 }
 
 .whyRow1Imgs li:nth-child(6) {
-    background-image: url("../media/speakers/charlesYuPressKit.1.png");
+  background-image: url("../media/speakers/charlesYuPressKit.1.png");
 
-    background-size: cover;
-    width: 40%;
+  background-size: cover;
+  width: 40%;
 
-    border-radius: 0 0 20px 0;
+  border-radius: 0 0 20px 0;
 }
 
 .whyRow1Imgs p {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    padding: 0;
-    margin: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
 
-    transform: scale(0);
-    transition: all .25s;
+  transform: scale(0);
+  transition: all 0.25s;
 
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    text-align: center;
-    font-size: calc(.5vw + 1rem);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  font-size: calc(0.5vw + 1rem);
 }
 
 .whyRow1Imgs li:hover p {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 /* || ROW2 */
 
 .whyRow2Text {
-    order: 1;
+  order: 1;
 }
 
 .whyRow2Text h2 {
-    text-align: right;
+  text-align: right;
 }
 
 .whyRow2Text p {
-    text-align: center;
+  text-align: center;
 }
 
 .whyRow2Text h2 + p span {
-    font-size: calc(.5rem + .5vw + .5vh);
+  font-size: calc(0.5rem + 0.5vw + 0.5vh);
 }
 
 .whyRow2Imgs {
-    min-width: 700px;
+  min-width: 700px;
 }
 
 /* || ROW3 */
 
 .whyRow3 {
-    position: relative;
+  position: relative;
 }
 
 .whyRow3Text {
-    flex-flow: column;
-    position: absolute;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.644);
-    width: 100%;
-    height: 100%;
+  flex-flow: column;
+  position: absolute;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.644);
+  width: 100%;
+  height: 100%;
 
-    border-radius: 20px;
-    font-size: calc(4rem + 2vw + 2vh);
+  border-radius: 20px;
+  font-size: calc(4rem + 2vw + 2vh);
 }
 
-.whyRow3Text > h2 + p{
-    font-family: Brandon, sans-serif;
-    font-size: calc(3rem + 2vw + 2vh);
-
+.whyRow3Text > h2 + p {
+  font-family: Brandon, sans-serif;
+  font-size: calc(3rem + 2vw + 2vh);
 }
 
 .whyRow3Text > h2 + p span:first-child {
-    color: var(--inbetween-yellow); 
+  color: var(--inbetween-yellow);
 }
 
 .whyRow3Text > h2 + p span:nth-child(2) {
-    color: var(--inbetween-blue); 
+  color: var(--inbetween-blue);
 }
 
 .whyRow3Imgs {
-    list-style: none;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 990px) {
-    .whyRow1Text, .whyRow2Text {
-        height: 30vh;
-    }
+  .whyRow1Text,
+  .whyRow2Text {
+    height: 30vh;
+  }
 
-    .whyRow1 {
-        align-items: center;
-        justify-content: center;
-        height:unset;
-        /* unset synon with auto here. needed to ensure that the
+  .whyRow1 {
+    align-items: center;
+    justify-content: center;
+    height: unset;
+    /* unset synon with auto here. needed to ensure that the
         height of this was reset so that the second row wouldn't collapse
         into row1. */
-    }
-    
-    .whyRow2 {
-        height: auto;
-    }
-    
-    .whyRow1Text, .whyRow1Imgs {
-        width: 100%;
-    }
+  }
 
-    .whyRow1Imgs > li:nth-child(n) {
-        width: calc((1/3)*100%);
-        height: 35vh;
-    }
+  .whyRow2 {
+    height: auto;
+  }
 
-    .whyRow1Imgs p {
-        transform: scale(1);
-        font-size: calc(1rem + .2vw);
-    }
+  .whyRow1Text,
+  .whyRow1Imgs {
+    width: 100%;
+  }
 
+  .whyRow1Imgs > li:nth-child(n) {
+    width: calc((1 / 3) * 100%);
+    height: 35vh;
+  }
 
-    .whyRow2 {
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .whyRow2Text, .whyRow2Imgs {
-        width: 100%;
+  .whyRow1Imgs p {
+    transform: scale(1);
+    font-size: calc(1rem + 0.2vw);
+  }
 
-    }
+  .whyRow2 {
+    align-items: center;
+    justify-content: center;
+  }
 
-    .whyRow2Text {
-        order: 0;
-    }
+  .whyRow2Text,
+  .whyRow2Imgs {
+    width: 100%;
+  }
 
-    .whyRow2Imgs > li:nth-child(n) {
-        /* styling these Row2 elements' pre-existing properties will not work.
+  .whyRow2Text {
+    order: 0;
+  }
+
+  .whyRow2Imgs > li:nth-child(n) {
+    /* styling these Row2 elements' pre-existing properties will not work.
         hypothesis: bc all styling was made in JS first(?) unsure. */
-    }
-
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .whyRow1,
+  .whyRow2 {
+    margin-top: 20%;
+  }
 
-    .whyRow1,
-    .whyRow2 {
-        margin-top: 20%;
-    }
+  .whyRow1Imgs li,
+  .whyRow2Imgs li {
+    margin-top: 2%;
+    border-radius: 20px !important;
+  }
 
-    .whyRow1Imgs li,
-    .whyRow2Imgs li {
-        margin-top: 2%;
-        border-radius: 20px !important;
-    }
+  .whyRow1Imgs p {
+    border-radius: 0 0 20px 20px;
+  }
 
-    .whyRow1Imgs p {
-        border-radius: 0 0 20px 20px;
-    }
+  .whyRow1Text,
+  .whyRow2Text {
+    width: 100%;
+    height: 40vh;
+  }
 
+  .whyRow1Imgs,
+  .whyRow2Imgs {
+    min-width: 300px;
+  }
 
-    .whyRow1Text, .whyRow2Text {
-        width: 100%;
-        height: 40vh;
-    }
+  .whyRow1Imgs > li:nth-child(n) {
+    width: 100%;
+    height: 25vh;
+  }
 
-    .whyRow1Imgs, .whyRow2Imgs {
-        min-width: 300px;
-    }
+  .whyRow2Imgs > li:nth-child(n) {
+    width: 100% !important;
+  }
 
-    .whyRow1Imgs > li:nth-child(n) {
-        width: 100%;
-        height: 25vh;
-    }
+  .whyRow3Imgs > li:nth-child(n) {
+    width: 100% !important;
+  }
 
-    .whyRow2Imgs > li:nth-child(n) {
-        width: 100% !important;
-    }
+  .whyRow3Imgs li:nth-child(n) {
+    border-radius: 0;
+  }
 
-    .whyRow3Imgs > li:nth-child(n) {
-        width: 100% !important;
-    }
+  .whyRow3Imgs li:first-child {
+    border-radius: 20px 20px 0 0;
+  }
 
-    .whyRow3Imgs li:nth-child(n) {
-        border-radius: 0;
-    }
-
-    .whyRow3Imgs li:first-child {
-        border-radius: 20px 20px 0 0;
-    }
-
-    .whyRow3Imgs li:last-child {
-        border-radius: 0 0 20px 20px;
-    }
-
+  .whyRow3Imgs li:last-child {
+    border-radius: 0 0 20px 20px;
+  }
 }
-

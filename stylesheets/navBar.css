@@ -1,44 +1,43 @@
-
 .flexWrapper {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    list-style: none;
-    padding-left: 0;
-  }
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
 
-  .flexWrapper li {
-    font-size: calc(.1em + 1.5vw); 
-    padding: .1em;
-    margin: .8em;
-    padding-top: .1em;
-    margin-top: .5em;
-    color: #17304F;
-    letter-spacing: .5px;
-  }
+.flexWrapper li {
+  font-size: calc(0.1em + 1.5vw);
+  padding: 0.1em;
+  margin: 0.8em;
+  padding-top: 0.1em;
+  margin-top: 0.5em;
+  color: #17304f;
+  letter-spacing: 0.5px;
+}
 
-  header a {
-    transition: all 0.3s;
-    text-decoration: overline;
-    text-decoration-thickness: 3px;
-  }
+header a {
+  transition: all 0.3s;
+  text-decoration: overline;
+  text-decoration-thickness: 3px;
+}
 
-  header a:link,
-  header a:visited {
-    color: #17304F;
-  }
+header a:link,
+header a:visited {
+  color: #17304f;
+}
 
-  header .home  {
-    text-decoration: none;
-  }
+header .home {
+  text-decoration: none;
+}
 
-  header a:hover {
-    color: #7FA6D7;
-  }
+header a:hover {
+  color: #7fa6d7;
+}
 
-  header #contact:hover {
-    color: #CF5C51;
-  }
+header #contact:hover {
+  color: #cf5c51;
+}
