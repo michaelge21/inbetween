@@ -558,10 +558,10 @@ function hmrAccept(bundle, id) {
 
 },{}],"l8viC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _typeit = require("typeit");
-var _typeitDefault = parcelHelpers.interopDefault(_typeit);
+var _indexEsJs = require("../node_modules/typeit/dist/index.es.js");
+var _indexEsJsDefault = parcelHelpers.interopDefault(_indexEsJs);
 document.addEventListener("DOMContentLoaded", ()=>{
-    new (0, _typeitDefault.default)("#typeIt", {
+    new (0, _indexEsJsDefault.default)("#typeIt", {
         lifeLike: true,
         startDelay: 1000,
         loop: true,
@@ -569,7 +569,37 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }).pause(3000).delete().pause(500).type("students.").pause(1000).move(-9).type("<i>na\xefve<i> ").pause(2000).delete().type("a conference for ").pause(1500).move(9).delete().pause(500).type("our Asian stereotypes.").pause(2500).delete(18).type("immigrant stories.").pause(2500).delete(18).type("generational trauma.").pause(4000).delete().pause(500).type("the bamboo ceiling.").pause(2000).delete().type("future leaders.").pause(2000).delete().type("our GPAs.").pause(2500).delete().type("aspiring creatives.").pause(2000).delete().type("TA's.").pause(2000).delete().type("the sum of our meal points.").pause(2000).delete().type("young activists.").pause(2000).delete().type("our childhood instruments.").pause(2000).delete().type("conditioned perfectionists.").pause(5000).delete().type("professors.").pause(2000).delete().type("change-makers.").pause(2000).delete().type("another free food event.").pause(2000).delete().type("<span class='tiny'>but, we do have free food.</span>").pause(5000).delete().type("<span class='tiny'>seriously. so much food. pls help.</span>").pause(1000).delete().go();
 });
 
-},{"typeit":"5plyB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5plyB":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../node_modules/typeit/dist/index.es.js":"5plyB"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"5plyB":[function(require,module,exports) {
 // TypeIt by Alex MacArthur - https://typeitjs.com
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -1322,36 +1352,6 @@ const TypeIt = function(element, options = {}) {
     if (_opts.strings.length) _generateQueue();
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}]},["322s1","l8viC"], "l8viC", "parcelRequirea697")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["322s1","l8viC"], "l8viC", "parcelRequirea697")
 
 //# sourceMappingURL=about.1bd795a7.js.map

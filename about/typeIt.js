@@ -1,4 +1,4 @@
-import TypeIt from "typeit";
+import TypeIt from "../node_modules/typeit/dist/index.es.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     new TypeIt("#typeIt", {
