@@ -1,0 +1,312 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Brandon;
+  src: url("../Brandon_bld_it.ada7af11.otf") format("opentype");
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  color: #333;
+  margin: 0 1.8vw;
+  font-family: Barlow, sans-serif;
+}
+
+.splashCover {
+  height: 50vh;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: ". . . . . . . ."
+                       ". . . . . . . ."
+                       ". . . i i i i i"
+                       ". . . i i i i i"
+                       ". . . i i i i i"
+                       ". . . i i i i i"
+                       ". . . . . . . .";
+  display: grid;
+  position: absolute;
+  top: 3%;
+  right: -15vw;
+}
+
+.splashCover img {
+  max-width: 100%;
+  grid-area: i;
+}
+
+.landing {
+  height: 90vh;
+  background-color: var(--inbetween-darkBlue);
+  color: var(--inbetween-yellow);
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-areas: ". h h h h h h h . . . . . . . ."
+                       ". h h h h h h h . . . . . . . ."
+                       ". j j j j j j j j j j j j . . ."
+                       ". j j j j j j j j j j j j . . ."
+                       ". p p p p p p p p p p . . . . ."
+                       ". . . . . . . . . . . . . . . ."
+                       ". . s s s s s s s s s s s s . ."
+                       ". . . . b b b b b b b b . . . ."
+                       ". . . . b b b b b b b b . . . ."
+                       ". . . . b b b b b b b b . . . .";
+  grid-auto-rows: minmax(50px, 1fr);
+  display: grid;
+}
+
+.landing h1, .landing h2, .landing p, .landing span, .landing button {
+  z-index: 1;
+  position: relative;
+}
+
+.landing h1, .landing h2 {
+  align-self: center;
+}
+
+.landing h1 {
+  grid-area: h;
+  font-family: Brandon, sans-serif;
+  font-size: calc(2rem + 4vw);
+}
+
+.landing h2 {
+  grid-area: j;
+  font-size: calc(.8rem + 3vw);
+}
+
+.landing p {
+  grid-area: p;
+  font-size: calc(1.5vw + 1vh);
+}
+
+.landing .directed {
+  color: #fff;
+  grid-area: s;
+  place-self: flex-end center;
+  font-weight: bold;
+}
+
+.directed p {
+  font-size: calc(2vw + 1vh);
+}
+
+.landing button {
+  color: #eee;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: #cf5c51;
+  border: none;
+  border-radius: 15px;
+  grid-area: b;
+  font-size: calc(.5rem + 3vw);
+  transition: all .5s;
+  box-shadow: 0 8px 15px #0000001a;
+}
+
+.landing button span {
+  cursor: pointer;
+  transition: all .5s;
+  display: inline-block;
+  position: relative;
+}
+
+.landing button span:after {
+  content: "»";
+  opacity: 0;
+  transition: all .5s;
+  position: absolute;
+  top: 0;
+  right: -20px;
+}
+
+.landing button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 20px #ffffff80;
+}
+
+.landing button:hover span {
+  padding-right: 40px;
+}
+
+.landing button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.marqueeWrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.marquee1 {
+  white-space: nowrap;
+  animation: 220s linear 5s infinite marquee;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.marquee1:hover {
+  animation-play-state: paused;
+}
+
+.marquee1 p {
+  font-weight: bold;
+  display: inline-block;
+}
+
+.marquee1 p:nth-child(2n) {
+  color: #cf5c51;
+}
+
+.marquee1 p:nth-child(2n+1) {
+  color: var(--inbetween-blue);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+.mission {
+  color: #252f42;
+  text-align: center;
+  background: linear-gradient(#ffffffbc 0%, #fffffffb 2%, #fff 100%);
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-areas: ". h h h h h h h h h h h h h h ."
+                       ". h h h h h h h h h h h h h h ."
+                       ". . p p p p p p p p p p p p . ."
+                       ". . p p p p p p p p p p p p . ."
+                       ". . s s s s s s s s s s s s . ."
+                       ". . s s s s s s s s s s s s . ."
+                       ". . c c c c c c c c c c c c . .";
+  display: grid;
+  position: relative;
+}
+
+.mission h2 {
+  grid-area: h;
+  place-self: center flex-start;
+  margin: 0;
+  font-family: Brandon, sans-serif;
+  font-size: calc(2rem + 2vw);
+}
+
+.mission p {
+  text-align: left;
+  grid-area: p;
+  place-self: center flex-start;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: calc(.8rem + 1vw);
+  line-height: calc(4vh + 1rem);
+}
+
+.mission span {
+  grid-area: s;
+  place-self: center flex-start;
+}
+
+.mission h3 {
+  color: var(--inbetween-blue);
+  grid-area: c;
+  margin: 0;
+  font-family: Brandon, sans-serif;
+  font-size: calc(.1rem + 2vw + 2vh);
+}
+
+.asideNav {
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  position: fixed;
+  top: 25%;
+  right: 0%;
+}
+
+.asideNav li {
+  width: 225px;
+  text-align: center;
+  color: var(--inbetween-yellow);
+  letter-spacing: 2px;
+  background-color: #1e3e6780;
+  margin: 1rem 0 1rem 1rem;
+  font-size: calc(.5rem + 1vw);
+  transition: all .3s;
+}
+
+.asideNav a {
+  padding: 1rem;
+  display: block;
+}
+
+.asideNav a:link, .asideNav a:visited {
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+.asideNav a:hover {
+  color: var(--inbetween-darkBlue);
+  background-color: var(--inbetween-yellow);
+}
+
+@media screen and (max-width: 480px) {
+  .hide, .asideNav {
+    display: none;
+  }
+
+  .landing {
+    height: unset;
+    height: 80vh;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: ". h h h h h h ."
+                         ". j j j j j j ."
+                         ". p p p p p . ."
+                         ". s s s s s s ."
+                         ". b b b b b b ."
+                         ". b b b b b b .";
+    grid-auto-rows: minmax(50px, 1fr);
+  }
+
+  .landing p {
+    grid-area: p;
+    font-size: calc(1.5vw + 1vh + .5rem);
+  }
+
+  .splashCover {
+    top: 20%;
+    right: 0;
+  }
+
+  .marquee1 p:nth-child(2n+1) {
+    color: var(--inbetween-darkBlue);
+  }
+
+  .marquee1 {
+    animation-duration: 280s;
+    animation-delay: 0s;
+  }
+
+  .mission {
+    display: none;
+  }
+
+  .mission h2 {
+    font-size: calc(1rem + 1vw);
+  }
+}
+
+/*# sourceMappingURL=index.4c63e593.css.map */

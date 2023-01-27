@@ -21,6 +21,8 @@
     "typeit": "^8.7.1"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
     "parcel": "^2.8.3",
     "prettier": "^2.8.3"
   }
