@@ -2,7 +2,6 @@
   "name": "inbetween",
   "version": "1.0.0",
   "description": "This project is in-progress. The designer and developer (me) recognizes that lots of this isn't optimized for production yet, and I want to remind any potential viewers that this is not a final piece.",
-  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +20,8 @@
     "typeit": "^8.7.1"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
     "parcel": "^2.8.3",
     "prettier": "^2.8.3"
   }
