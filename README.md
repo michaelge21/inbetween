@@ -1,6 +1,8 @@
 # Welcome to In-Between's webpage!
 
-This project is in-progress. The designer and developer (me) recognizes that lots of this isn't optimized for production yet, and I want to remind any potential viewers that this is not a final piece.
+In-Between is a pan-Asian mental health conference founded in 2019 by students. Michael Ge is the webmaster and designer for in-between's inaugural site, and also led/spoke at the event in 2022.
+
+This project is in-progress. Much isn't optimized for production yet.
 
 Huge thanks to:
 
