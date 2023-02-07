@@ -58,7 +58,8 @@ body {
     ". . s s s s s s s s s s s s . ."
     ". . . . b b b b b b b b . . . ."
     ". . . . b b b b b b b b . . . ."
-    ". . . . b b b b b b b b . . . .";
+    ". . . . b b b b b b b b . . . ."
+    ". . . . . . . . . . . . . . . .";
   height: 90vh;
   background-color: var(--inbetween-darkBlue);
   color: var(--inbetween-yellow);
@@ -109,10 +110,10 @@ body {
 .landing button {
   grid-area: b;
 
-  background-color: #cf5c51;
-  border: none;
+  background-color: var(--inbetween-darkBlue);
+  border: 2px solid var(--inbetween-yellow);
   border-radius: 15px;
-  color: #eeeeee;
+  color: var(--inbetween-yellow);
   text-align: center;
   font-size: calc(0.5rem + 3vw);
   letter-spacing: 2px;

@@ -62,8 +62,8 @@ p {
   justify-content: space-evenly;
   padding: 0 20px;
 
-  background-color: pink;
-
+  background-color: var(--inbetween-darkBlue);
+  color: white;
   line-height: calc(2.5rem + 0.1vw + 0.1vh);
 
   border-radius: 20px;
@@ -145,8 +145,6 @@ p {
   background-image: url("../media/speakers/mimi_headshot 2_2021.jpg");
   background-size: cover;
   width: 20%;
-
-  border-radius: 0 20px 0 0;
 }
 
 .whyRow1Imgs li:nth-child(4) {
@@ -154,7 +152,6 @@ p {
 
   background-size: cover;
   width: 25%;
-  border-radius: 0 0 0 20px;
 }
 
 .whyRow1Imgs li:nth-child(5) {
@@ -168,8 +165,6 @@ p {
 
   background-size: cover;
   width: 40%;
-
-  border-radius: 0 0 20px 0;
 }
 
 .whyRow1Imgs p {
@@ -190,6 +185,14 @@ p {
 
 .whyRow1Imgs li:hover p {
   transform: scale(1);
+}
+
+.whyRow1Imgs li:nth-child(4):hover p {
+  border-radius: var(--bottom-left-padding);
+}
+
+.whyRow1Imgs li:nth-child(6):hover p {
+  border-radius: var(--bottom-right-padding);
 }
 
 /* || ROW2 */
@@ -286,6 +289,7 @@ p {
   .whyRow1Imgs p {
     transform: scale(1);
     font-size: calc(1rem + 0.2vw);
+    border-radius: inherit;
   }
 
   .whyRow2 {
